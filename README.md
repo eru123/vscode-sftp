@@ -6,6 +6,14 @@ Official maintained and updated version by [@Natizyskunk](https://github.com/Nat
 - VS Code marketplace : https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp <br>
 - VSIX release : https://github.com/Natizyskunk/vscode-sftp/releases/
 
+
+
+## INFOS <br>
+This is the main repository for the SFTP extension since [@liximomo](https://github.com/liximomo) has set his own to deprecated in favor of mine in the VSCode marketplace. <br>
+I've been working hard to fix a lot of things and i've updated more than 30 new releases with lot of improvements and stability fixes and bring new features for two years now. I don't want to rush new features as I prefer to have a long-term stable project. Just so you know, At the start of this year, in January, a new fork of mine has been available from [@satiromarra](https://github.com/satiromarra) with some new cool features like a GUI (feel free to try it). But as of today he's taking all the credit for it without even mentioning [@liximomo](https://github.com/liximomo) or me and the original work in the README. That's pretty sad. <br>
+I actually dont mind the fork, I even think that's a great idea and that some of his features are pretty cool additions but it would be a lot easier if we could keep all this nice work centralized in one place. For the last 6 months I wasn't able to work a lot on the project because of personal reasons at the time. I also have a full time job now that's taking me like almost 50 hours per week so I can't always be as reactive as I would like to. Also I would be more than happy to work with [@satiromarra](https://github.com/satiromarra) to have the best of our two forks to make one big and better one but this is going to take more or less time as we find some time to talk together. So for now I'll keep this repo as the main one and will try to update it as much as I can. <br>
+Feel free to use the version you prefer. 🙂
+
 ---
 
 VSCode-SFTP enables you to add, edit or delete files within a local directory and have it sync to a remote server directory using different transfer protocols like FTP or SSH. The most basic setup requires only a few lines of configuration with a wide array of specific settings also available to meet the needs of any user. Both powerful and fast, it helps developers save time by allowing the use of a familiar editor and environment.
