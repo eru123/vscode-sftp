@@ -1,18 +1,26 @@
 # sftp sync extension for VS Code
 
-Official maintained and updated version by [@Natizyskunk](https://github.com/Natizyskunk/) 😀 <br>
+New maintained and updated version by [@Natizyskunk](https://github.com/Natizyskunk/) 😀 <!-- and [@satiromarra](https://github.com/satiromarra) --> <br>
 (Forked from the no longer maintained [liximomo's SFTP plugin](https://github.com/liximomo/vscode-sftp.git))
 
 - VS Code marketplace : https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp <br>
 - VSIX release : https://github.com/Natizyskunk/vscode-sftp/releases/
 
+## INFOS - 2023/06/23
+This is the main repository for the SFTP extension since [@liximomo](https://github.com/liximomo) has set his own to deprecated in favor of this one in the VSCode marketplace.
+There are also other forks that are available. Feel free to try them.
 
+A lot of work as been brought to fix bugs, add new features and more than 50 updates have been released with a lot of improvements and stability fixes for almost two years now. 😎
 
-## INFOS <br>
-This is the main repository for the SFTP extension since [@liximomo](https://github.com/liximomo) has set his own to deprecated in favor of mine in the VSCode marketplace. <br>
-I've been working hard to fix a lot of things and i've updated more than 30 new releases with lot of improvements and stability fixes and bring new features for two years now. I don't want to rush new features as I prefer to have a long-term stable project. Just so you know, At the start of this year, in January, a new fork of mine has been available from [@satiromarra](https://github.com/satiromarra) with some new cool features like a GUI (feel free to try it). But as of today he's taking all the credit for it without even mentioning [@liximomo](https://github.com/liximomo) or me and the original work in the README. That's pretty sad. <br>
-I actually dont mind the fork, I even think that's a great idea and that some of his features are pretty cool additions but it would be a lot easier if we could keep all this nice work centralized in one place. For the last 6 months I wasn't able to work a lot on the project because of personal reasons at the time. I also have a full time job now that's taking me like almost 50 hours per week so I can't always be as reactive as I would like to. Also I would be more than happy to work with [@satiromarra](https://github.com/satiromarra) to have the best of our two forks to make one big and better one but this is going to take more or less time as we find some time to talk together. So for now I'll keep this repo as the main one and will try to update it as much as I can. <br>
-Feel free to use the version you prefer. 🙂
+<!-- At the start of the year 2023, a new fork from [@satiromarra](https://github.com/satiromarra) was born with some really cool features. So for the future we decided to work together and put our efforts in one place to make an even better extension for the community.
+
+As of today (2023-06-23) we'll now be two collaborators : [@satiromarra](https://github.com/satiromarra) and [@me](https://github.com/Natizyskunk) 🙂.
+
+We've been working hard to fix a lot of things and we've updated more than 50 new releases with a lot of improvements and stability fixes and we've brought new features for almost two years now. 
+
+We'll try to keep this extension up-to-date as much as we can and add new relevant features. For the last 6 months I wasn't able to work a lot on the project because of personal reasons at the time so I'm glad [@satiromarra](https://github.com/satiromarra) was able to take on while I wasn't here. -->
+
+Also we would be more than happy to have you participate in one way or another to this project. You can do so by simply following the [templates](https://github.com/Natizyskunk/vscode-sftp/issues/new/choose) when you open a new issue or a new pull request.
 
 ---
 
