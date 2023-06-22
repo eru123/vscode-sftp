@@ -166,7 +166,11 @@
       {
         "command": "sftp.download.file",
         "title": "Download File",
-        "category": "SFTP"
+        "category": "SFTP",
+        "icon": {
+          "dark": "resources/dark/download-file.svg",
+          "light": "resources/light/download-file.svg"
+        }
       },
       {
         "command": "sftp.download.activeFile",
@@ -176,7 +180,11 @@
       {
         "command": "sftp.download.folder",
         "title": "Download Folder",
-        "category": "SFTP"
+        "category": "SFTP",
+        "icon": {
+          "dark": "resources/dark/download-folder.svg",
+          "light": "resources/light/download-folder.svg"
+        }
       },
       {
         "command": "sftp.download.activeFolder",
@@ -606,6 +614,16 @@
           "command": "sftp.create.file",
           "group": "7_modification",
           "when": "view == remoteExplorer && viewItem != file"
+        },
+        {
+          "command": "sftp.download.file",
+          "group": "inline",
+          "when": "view == remoteExplorer && viewItem == file"
+        },
+        {
+          "command": "sftp.download.folder",
+          "group": "inline",
+          "when": "sftp.enabled && view == remoteExplorer && viewItem == folder"
         }
       ],
       "scm/title": [
