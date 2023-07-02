@@ -50,7 +50,7 @@ export function resolvePath(from: string, to: string) {
   return path.resolve(from, replaceHomePath(to));
 }
 
-export function isInWorksapce(filepath: string) {
+export function isInWorkspace(filepath: string) {
   const workspaceFolders = getWorkspaceFolders();
   return (
     workspaceFolders &&

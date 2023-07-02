@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import logger from '../logger';
+import { realpathSync } from 'fs';
 import app from '../app';
 import StatusBarItem from '../ui/statusBarItem';
 import { onDidOpenTextDocument, onDidSaveTextDocument, showConfirmMessage } from '../host';
@@ -10,7 +11,7 @@ import {
   findAllFileService,
   disposeFileService,
 } from './serviceManager';
-import { reportError, isValidFile, isConfigFile, isInWorksapce } from '../helper';
+import { reportError, isValidFile, isConfigFile, isInWorkspace } from '../helper';
 import { downloadFile, uploadFile } from '../fileHandlers';
 
 let workspaceWatcher: vscode.Disposable;
@@ -45,7 +46,8 @@ async function handleFileSave(uri: vscode.Uri) {
 
   const config = fileService.getConfig();
   if (config.uploadOnSave) {
-    const fspath = uri.fsPath;
+    const fspath = await realpathSync.native(uri.fsPath);
+    uri = vscode.Uri.file(fspath);
     logger.info(`[file-save] ${fspath}`);
     try {
       await uploadFile(uri);
@@ -93,7 +95,7 @@ function watchWorkspace({
 
   workspaceWatcher = onDidSaveTextDocument((doc: vscode.TextDocument) => {
     const uri = doc.uri;
-    if (!isValidFile(uri) || !isInWorksapce(uri.fsPath)) {
+    if (!isValidFile(uri) || !isInWorkspace(uri.fsPath)) {
       return;
     }
 
@@ -113,7 +115,7 @@ function watchWorkspace({
 
 function init() {
   onDidOpenTextDocument((doc: vscode.TextDocument) => {
-    if (!isValidFile(doc.uri) || !isInWorksapce(doc.uri.fsPath)) {
+    if (!isValidFile(doc.uri) || !isInWorkspace(doc.uri.fsPath)) {
       return;
     }
 

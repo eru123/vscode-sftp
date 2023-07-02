@@ -65,6 +65,7 @@ const configScheme = {
     filesExclude: Joi.array()
       .min(0)
       .items(Joi.string()),
+    order: Joi.number(),
   },
 };
 
@@ -107,6 +108,10 @@ const defaultConfig = {
   // secureOptions,
   // passive: false,
   remoteTimeOffsetInHours: 0,
+
+  remoteExplorer: {
+    order: 0,
+  },
 };
 
 function mergedDefault(config) {
@@ -182,7 +187,7 @@ export function newConfig(basePath) {
             port: 22,
             username: 'username',
             remotePath: '/',
-            uploadOnSave: true,
+            uploadOnSave: false,
             useTempFile: false,
             openSsh: false,
           },
