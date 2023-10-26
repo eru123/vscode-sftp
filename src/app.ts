@@ -17,12 +17,12 @@ app.state = new AppState();
 app.sftpBarItem = new StatusBarItem(
   () => {
     if (app.state.profile) {
-      return `SFTP: ${app.state.profile}`;
+      return `XSFTP: ${app.state.profile}`;
     } else {
-      return 'SFTP';
+      return 'XSFTP';
     }
   },
-  'SFTP@Natizyskunk',
+  'XSFTP@eru123',
   COMMAND_TOGGLE_OUTPUT
 );
 app.fsCache = LRU<string, string>({ max: 6 });
