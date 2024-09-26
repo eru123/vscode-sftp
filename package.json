@@ -2,7 +2,7 @@
   "name": "xsftp",
   "displayName": "XSFTP",
   "description": "XSFTP/FTP sync",
-  "version": "1.16.3",
+  "version": "1.16.31",
   "publisher": "eru123",
   "author": "Jericho Aquino <jericho@skiddph.com> (https://github.com/eru123)",
   "engines": {
@@ -754,5 +754,8 @@
       "<rootDir>/test/**/*.spec.js",
       "<rootDir>/**/*/__tests__/*.ts"
     ]
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/eru123"
   }
 }
